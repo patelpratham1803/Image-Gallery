@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+}
+
+#gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+figure {
+    position: relative;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 138, 138);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li img {
+    cursor: pointer;
+    transition: filter 0.3s;
+    filter: grayscale(1);
+}
+
+ul li img:hover {
+    filter: grayscale(0.5);
+}
+
+ul li img.active {
+    filter: grayscale(0);
+}
